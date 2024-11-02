@@ -18,3 +18,12 @@ spring:
           default-label: master
           clone-on-start: true
           force-pull: true
+          
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: always
